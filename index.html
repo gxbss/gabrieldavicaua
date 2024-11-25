@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu piru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score">Pontuação: 0</div>
+        <button id="restartButton" class="hidden">Reiniciar</button>
+        <div id="game-over" class="hidden">
+            <h1>Game Over</h1>
+            <p id="pontuacao">Sua pontuação: 0 pontos</p>
+            <p id="recorde"></p>
+        </div>
+    </div>
+    <div id="startScreen">
+        <button id="startButton">Iniciar Jogo</button>
+    </div>
+    
+    <script src="game.js"></script>
+    <div class="controls">
+        <button onclick="move('up')">Cima</button>
+        <br>
+        <button onclick="move('left')">Esquerda</button>
+        <button onclick="move('right')">Direita</button>
+        <br>
+        <button onclick="move('down')">Baixo</button>
+        
+    </div>
+    
+</body>
+</html>
